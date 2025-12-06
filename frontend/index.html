@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI图片标签化展示系统</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-robot"></i> AI图片标签化展示系统</h1>
+            <p>上传图片，利用百度AI图像识别技术自动生成标签，直观展示图片内容</p>
+        </header>
+        
+        <div class="app-container">
+            <div class="upload-section">
+                <h2 class="section-title"><i class="fas fa-cloud-upload-alt"></i> 上传图片</h2>
+                <div class="upload-area" id="uploadArea">
+                    <i class="fas fa-images"></i>
+                    <h3>拖放图片或点击上传</h3>
+                    <p>支持 JPG、PNG、WebP 格式，最大 5MB</p>
+                    <button class="upload-btn" id="uploadBtn">选择图片</button>
+                    <input type="file" id="fileInput" accept="image/*" class="hidden">
+                </div>
+            </div>
+            
+            <div class="preview-section">
+                <div class="image-preview">
+                    <h2 class="section-title"><i class="fas fa-image"></i> 图片预览</h2>
+                    <div class="preview-container">
+                        <img id="previewImage" src="" alt="预览图片">
+                        <div class="preview-placeholder" id="previewPlaceholder">
+                            <i class="far fa-image"></i>
+                            <p>图片预览区域</p>
+                            <p>上传图片后，这里将显示预览</p>
+                        </div>
+                    </div>
+                    
+                    <div class="actions">
+                        <button class="action-btn analyze-btn" id="analyzeBtn">
+                            <i class="fas fa-brain"></i> AI分析图片标签
+                        </button>
+                        <button class="action-btn reset-btn" id="resetBtn">
+                            <i class="fas fa-redo"></i> 重置
+                        </button>
+                    </div>
+                    
+                    <div class="loading" id="loading">
+                        <div class="loading-spinner"></div>
+                        <p>AI正在分析图片内容，请稍候...</p>
+                    </div>
+                </div>
+                
+                <div class="tags-section">
+                    <h2 class="section-title"><i class="fas fa-tags"></i> AI识别标签</h2>
+                    <p id="tagsDescription">上传图片并点击"AI分析图片标签"按钮，系统将使用百度AI图像识别技术为图片生成标签。</p>
+                    <div class="tags-container" id="tagsContainer">
+                        <!-- 标签将在这里动态生成 -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="api-info">
+                <h3><i class="fas fa-code"></i> API 集成信息</h3>
+                <p>本系统集成了百度AI开放平台的图像识别API，可识别图片中的物体、场景、人脸等内容，并返回相应的标签及置信度。</p>
+                
+                <div class="api-status">
+                    <div class="status-indicator connected"></div>
+                    <span>API连接状态：正常 (模拟模式)</span>
+                </div>
+                
+                <div style="margin-top: 20px; padding: 15px; background-color: #f8fafc; border-radius: 8px;">
+                    <p><strong>提示：</strong> 这是个人练手项目，实际使用中需要替换为真实的百度AI API密钥。您可以前往 <a href="https://ai.baidu.com/" target="_blank">百度AI开放平台</a> 申请API Key和Secret Key。</p>
+                </div>
+            </div>
+            
+            <div class="gallery-section">
+                <h2 class="section-title"><i class="fas fa-photo-video"></i> 示例图片库</h2>
+                <p>点击下方示例图片快速体验AI标签识别功能</p>
+                
+                <div class="gallery" id="gallery">
+                    <!-- 示例图片将通过JS动态生成 -->
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>AI图片标签化展示系统 - 个人练手项目 | 使用HTML/CSS + JavaScript + 百度AI开放平台API</p>
+            <p>注：此项目为前端演示，实际API调用需要后端支持以避免暴露API密钥</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

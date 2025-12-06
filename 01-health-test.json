@@ -1,0 +1,9 @@
+
+{
+  "name": "健康检查",
+  "url": "http://localhost:3000/api/health",
+  "method": "GET",
+  "headers": {
+    "Content-Type": "application/json"
+  }
+}

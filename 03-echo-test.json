@@ -1,0 +1,11 @@
+{
+  "name": "连接测试",
+  "url": "http://localhost:3000/api/test/echo",
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": {
+    "test": "ping"
+  }
+}
