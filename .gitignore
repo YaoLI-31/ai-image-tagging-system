@@ -14,3 +14,6 @@ Thumbs.db
 !.vscode/settings.json
 !.vscode/extensions.json
 !.vscode/launch.json
+
+#精确忽略特定路径的文件
+frontend/README.md	
