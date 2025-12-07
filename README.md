@@ -71,5 +71,5 @@
 ### 本地运行步骤
 1. **克隆仓库**
    ```bash
-   git clone https://github.com/YaoLI-31/ai-image-tagging-system.git
-   cd ai-image-tagging-system
+   git clone https://github.com/YaoLI-31/ai-image-tagging-demo.git
+    cd ai-image-tagging-demo
