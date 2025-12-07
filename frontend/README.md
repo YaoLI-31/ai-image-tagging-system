@@ -1,27 +1,41 @@
-# AI图片标签化展示系统
+# 🖼️ AI 图片标签化展示系统
 
-一个基于百度AI开放平台图像识别API的图片标签化展示前端项目，可自动为上传的图片生成内容标签。
+[![GitHub stars](https://img.shields.io/github/stars/YaoLI-31/ai-image-tagging-system?style=social)](https://github.com/YaoLI-31/ai-image-tagging-system/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/YaoLI-31/ai-image-tagging-system?style=social)](https://github.com/YaoLI-31/ai-image-tagging-system/network/members)
 
-## 功能特点
+**一个基于百度AI的全栈应用，可自动为上传的图片生成智能内容标签。**
 
-- 支持拖放和点击上传图片
-- 实时预览上传的图片
-- 模拟调用百度AI图像识别API（可替换为真实API）
-- 自动生成图片内容标签并显示置信度
-- 标签按类别（动物、食物、场景、物体）颜色分类
-- 示例图片库快速体验功能
-- 响应式设计，适配各种屏幕尺寸
+👉 **在线体验**：[https://yaoli-31.github.io/ai-image-tagging-system/](https://yaoli-31.github.io/ai-image-tagging-system/) (若已部署)
+👉 **项目演示**：[在线演示视频/GIF] # 强烈建议您录制一个GIF动图放在这里
 
-## 技术栈
+---
 
-- HTML5
-- CSS3（Flexbox、Grid、CSS变量）
-- JavaScript（ES6+）
-- 百度AI开放平台图像识别API（模拟）
+## ✨ 项目功能
 
-## 安装与运行
+- **🖼️ 直观上传**：支持拖放、点击上传图片，支持 JPG、PNG、WebP 等格式。
+- **🤖 智能识别**：集成百度AI图像识别接口，自动分析图片内容。
+- **🏷️ 标签可视化**：将识别结果以彩色标签云形式展示，并标注置信度。
+- **🎨 现代UI**：响应式设计，在桌面和移动设备上均有良好体验。
+- **🔧 完整架构**：清晰的前后端分离设计，可作为全栈学习范例。
 
-1. 克隆仓库
-```bash
-git clone https://github.com/your-username/ai-image-tagging-demo.git
-cd ai-image-tagging-demo
+## 🛠️ 技术栈
+
+| 层面 | 技术 |
+|------|------|
+| **前端** | HTML5, CSS3 (Flexbox/Grid), Vanilla JavaScript (ES6+) |
+| **后端** | Node.js, Express.js |
+| **AI服务** | 百度AI开放平台 - 通用物体识别 API |
+| **开发工具** | Git, VSCode, Thunder Client (API测试) |
+
+## 🚀 快速开始
+
+### 前置要求
+- [Node.js](https://nodejs.org/) (v14 或以上)
+- [npm](https://www.npmjs.com/) (通常随Node.js安装)
+- 一个百度AI开放平台的账号（用于申请免费API密钥）
+
+### 本地运行步骤
+1. **克隆仓库**
+   ```bash
+   git clone https://github.com/YaoLI-31/ai-image-tagging-system.git
+   cd ai-image-tagging-system
